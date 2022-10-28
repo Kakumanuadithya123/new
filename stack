@@ -1,0 +1,11 @@
+public class stack {
+    int stk[] = new int[10];
+    int x;
+    stack(){
+        x = -1;
+    }
+    push(){
+        
+    }
+    
+}
