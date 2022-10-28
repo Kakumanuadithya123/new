@@ -1,0 +1,23 @@
+
+class Box{
+    double w,h,d;
+    Box(double width , double height , double depth){
+        w = width ;
+        h = height ;
+        d = depth ;
+    }
+    boolean isequal(Box o){
+        if(o.w == w && o.d == d && o.h == h){return true;}
+        else{return false;}
+    }
+
+}
+ class Main {
+     public static void main(String[] args) {
+         Box ob1 = new Box(10,5,20);
+         Box ob2 = new Box(10,5,20);
+         Box ob3 = new Box(20,10,15);
+         System.out.println("ob1 = ob2 :"+ob1.isequal(ob2));
+         System.out.println("ob1 = ob3 :"+ob1.isequal(ob3));
+     }
+  }
